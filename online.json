@@ -437,44 +437,6 @@
         "factoryId": "web-selector",
         "version": 2,
         "arguments": {
-          "name": "橘子动漫",
-          "description": "有验证，来自橘子动漫，导航：https://www.mgnacg.com/",
-          "iconUrl": "https://r2img.nanoacg.com/favicon.png",
-          "searchConfig": {
-            "searchUrl": "https://www.mgnacg.com/search/-------------/?wd={keyword}",
-            "searchUseOnlyFirstWord": true,
-            "subjectFormatId": "indexed",
-            "selectorSubjectFormatIndexed": {
-              "selectNames": ".thumb-content > .thumb-txt",
-              "selectLinks": ".search-box > div > a ",
-              "preferShorterName": true
-            },
-            "channelFormatId": "index-grouped",
-            "selectorChannelFormatFlattened": {
-              "selectChannelNames": ".anthology-tab > .swiper-wrapper a",
-              "matchChannelName": "^(?!Mahoo|存储线路|本地线路)(?<ch>.+?)(\\d+)?$",
-              "selectEpisodeLists": ".anthology-list-box",
-              "selectEpisodesFromList": "a",
-              "selectEpisodeLinksFromList": "",
-              "matchEpisodeSortFromName": "第\\s*(?<ep>.+)\\s*[话集]"
-            },
-            "matchVideo": {
-              "enableNestedUrl": true,
-              "matchNestedUrl": "$^",
-              "matchVideoUrl": "(^http(s)?:\\/\\/(?!.*http).+\\.(mp4|m3u8|flv|mkv))|(url=(?<v>http(s)?:\\/\\/.+\\.(mp4|m3u8|flv|mkv)))|(^http(s)?:\\/\\/(?!.*http).+(sign\\.bytetos|sign\\.byteimg|mcloud\\.139|cloudflarestorage|tos-cn)\\.com(?!.*\\.ts).+(-expires|-signature))|((bilivideo|akamaized|szbdyd)\\.com(?!.*\\.ts))|(\\/video\\/tos\\/)|(\\/video\\/.*mime_type=video)",
-              "cookies": "quality=1080",
-              "addHeadersToVideo": {
-                "referer": ""
-              }
-            }
-          },
-          "tier": 0
-        }
-      },
-      {
-        "factoryId": "web-selector",
-        "version": 2,
-        "arguments": {
           "name": "TvTFun",
           "description": "直连，来自TvTFun，导航：https://www.tvtfun.net/",
           "iconUrl": "https://www.tvtfun.net/logo.svg",
